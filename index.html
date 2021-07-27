@@ -1,9 +1,154 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <title>タイトル</title>
+    <!-- 文字エンコードをUTF-8に指定 -->
+    <meta charset="utf-8">
+    <!-- レンダリングを最新に指定 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 拡大を禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title></title>
+
+    <!-- Semantic UI を読み込む -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <!-- Vue.js を読み込む -->
+    <script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+
+    <!-- 共通のCSSファイルを読み込む -->
+    <link rel="stylesheet" href="./common/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 5000,
+                });
+            });
+    </script>
+
   </head>
-  <body>
-    僕は人間です
+  <body class=topbody>
+    <!-- Vue.jsで読み込む -->
+    <div id="app">
+            <br>   
+            <br>
+            <br> 
+            <br>
+               
+      <div id = "screen" class="ui main container">
+        <!-- 基本的なコンテンツはここに記載する -->
+        <!-- toppageの上のツールバー-->
+        <div class="ui inverted large borderless fixed fluid menu column">
+                <div id="toppenta"class="ui centered small image" >
+                        <img src="./common/penta3.png">
+                </div>
+                <div class="right menu">
+                        <div class="ui dropdown item">
+                                
+                                <a id="pink2"class="ui pink button" href="./login.html">Log in<i class="chevron right icon"></i></a>
+                           
+                        </div>
+                </div>
+        </div>       
+        
+        <div id="top" class="ui inverted attached center aligned basic segment">
+        
+               
+            <div id="top-top">
+            <div class="ui equal width center aligned padded grid">
+                <div class="ui center aligned">
+                <img class="ui big image" src="./common/penta2.png" alt="THE BINGO" style="z-index:10;">
+                </div>
+            </div>
+            <div class="ui stackable centered grid">
+                <div class="ui ten wide column">
+                <h1 style="z-index:10;text-align:center;">自信のあるあなたへ</h1>
+                </div>
+            </div>
+            <!-- <div class="ui stackable centered grid" style="color: rgb(255, 255, 255);">
+                <h1 style="z-index:10;">PCでもスマホでも使える無料のビンゴゲームのアプリです。<br>Webブラウザで幹事さんの時間短縮！楽しいビンゴ大会のイベント、結婚式の二次会や忘年会に。<br>Windows/mac対応。</h1>
+            </div> -->
+            </br>
+            </div>
+            <br>
+        </div>
+      </div>
+
+
+
+
+        <div class="ui vertical stripe segment">
+                <div class="ui middle aligned stackable grid container">
+                  <div class="row">
+                    <div class="fifteen wide column">
+                        <div class="ui horizontal divider"> 
+                            <h3>PeNTAって何？</h3>
+                        </div>
+                            <p>Pentaは同じ悩みをもつ同志が集まる女性限定のダイエットプラットフォームです。5人のチームを作って目標に向かって突き進み,綺麗で自信に満ちた姿をinstagramに投稿しよう。</p>
+                    </div>
+                   </div>
+                </div>
+        </div>
+        <div class="ui vertical stripe segment">
+                <div class="ui middle aligned stackable grid container">
+                        <div class="row2">
+                          <div class="fifteen wide column">
+                              <div class="ui horizontal divider"> 
+                                  <h3>Pentaのサービスイメージ</h3>
+　                            </div>
+                          </div>
+                          <div class="slider">
+                                <img src="./common/image.png" width="500" height="300" alt="">
+                                <img src="./common/image.png" width="500" height="300" alt="">
+                                <img src="./common/image.png" width="500" height="300" alt="">
+                                <img src="./common/image.png" width="500" height="300" alt="">
+                          </div>
+                        </div>
+                </div>
+        </div>
+        <div class="ui vertical stripe segment">
+                <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="fifteen wide column">
+                        <div class="ui horizontal divider"> 
+                            <h3>Pentaの目指す未来</h3>
+                        </div>
+                            <p>なせダイエットが続かないのか。それは,習慣や意思の弱さではなく、一緒に喜びや苦しさを分かち合い,痩せたことを認めてくれる仲間がいないからです。仲間からの日々の賞賛が,ダイエットを続けられるという自信につながります。みんなの賞賛を自信に変え,目標達成したら,大きな自信とともに綺麗になった自分の姿をさらけ出せるようになって欲しい。それがPentaの目指す未来です。
+                            </p>
+                    </div>
+                    <!--<div class="six wide right floated column">
+                      <img src="./common/image.png" class="ui large bordered rounded image">
+                    </div>
+                  </div>-->
+                </div>
+                </div>
+            
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <footer class="footer" style="margin-top: 1em;">
+                <div class="ui horizontal list"><br></div> 
+
+                <div class="ui horizontal small link list">
+                        <a class="item" href=https://www.mti.co.jp/?page_id=20>お問い合わせ　 ｜</a>
+                        <a class="item" href=https://www.mti.co.jp/?page_id=16>利用規約 　｜</a>
+                        <a class="item" href=https://www.mti.co.jp/?page_id=435>セキュリティーポリシー　｜</a>
+                        <!-- <a class="item" href="view/tokutei.html" target="_blank">特定商取引法に基づく表記　｜</a> -->
+                        <a class="item" href=https://www.mti.co.jp>運営会社</a>
+                </div>
+                <p><small>Copyright ©2019 MTI</small></p>
+        </footer>
+    </div>
+
+    <!-- APIのURLを読み込むJavaScriptファイル -->
+    <script src="./common/config.js" charset="utf-8"></script>
+    <!-- 各ページで使うJavaScriptファイルはこの行より下で読み込む -->
+    <script src="./js/top.js" charset="utf-8"></script>
   </body>
 </html>
